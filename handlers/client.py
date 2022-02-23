@@ -3,6 +3,7 @@ from create_bot import dp, bot
 from keyboard import kb_client
 from aiogram.types import ReplyKeyboardRemove
 
+
 async def commands_start(message: types.Message):
     await bot.send_message(message.from_user.id, 'Приятного аппетита', reply_markup=kb_client)
 
@@ -12,7 +13,7 @@ async def command_work_time(message: types.Message):
 
 
 async def command_place(message: types.Message):
-    await bot.send_message(message.from_user.id, 'ул. Марашал Казакова 68, к. 1',)
+    await bot.send_message(message.from_user.id, 'ул. Марашал Казакова 68, к. 1', )
 
 
 def register_handlers_client(dp: Dispatcher):
